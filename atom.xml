@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Victor Chou&#39;s Blog</title>
+  <title>Victor Chou&#39;s Home</title>
   
   <subtitle>I&#39;m Victor</subtitle>
   <link href="/atom.xml" rel="self"/>
@@ -32,7 +32,7 @@
     
     </summary>
     
-      <category term="Algorithm and Data structure" scheme="http://zhouyingming.com/categories/algorithm/"/>
+      <category term="Algorithm and Data structure" scheme="http://zhouyingming.com/categories/Algorithm-and-Data-structure/"/>
     
     
       <category term="sort algorithm" scheme="http://zhouyingming.com/tags/sort-algorithm/"/>

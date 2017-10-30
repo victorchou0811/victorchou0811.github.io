@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhouyingming.com/"/>
-  <updated>2017-10-27T13:40:25.402Z</updated>
+  <updated>2017-10-30T06:02:28.896Z</updated>
   <id>http://zhouyingming.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://zhouyingming.com/2017/10/27/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/"/>
     <id>http://zhouyingming.com/2017/10/27/排序算法/</id>
     <published>2017-10-27T05:17:00.000Z</published>
-    <updated>2017-10-27T13:40:25.402Z</updated>
+    <updated>2017-10-30T06:02:28.896Z</updated>
     
     <summary type="html">
     
@@ -32,7 +32,7 @@
     
     </summary>
     
-      <category term="Algorithm and Data structure" scheme="http://zhouyingming.com/categories/Algorithm-and-Data-structure/"/>
+      <category term="Algorithm and Data Structure" scheme="http://zhouyingming.com/categories/algorithm/"/>
     
     
       <category term="sort algorithm" scheme="http://zhouyingming.com/tags/sort-algorithm/"/>

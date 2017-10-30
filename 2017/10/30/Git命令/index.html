@@ -108,7 +108,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Git," />
 
 
 
@@ -124,14 +124,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://zhouyingming.com/about/index.html">
+<meta name="description" content="前几天图森科技的面试官问会不会使用Git和SVN，对Git的理解怎么样，着重问了git push, git commit和git add三个命令的区别是什么。这篇文章就着重说说几个常见的Git命令。  git push git pull git commit git clone git remote git fetch git add下面详细介绍上面各个命令的概念和用法，理解了这些内容，也基本掌握">
+<meta name="keywords" content="Git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git命令">
+<meta property="og:url" content="http://zhouyingming.com/2017/10/30/Git命令/index.html">
 <meta property="og:site_name" content="Victor Chou&#39;s Home">
+<meta property="og:description" content="前几天图森科技的面试官问会不会使用Git和SVN，对Git的理解怎么样，着重问了git push, git commit和git add三个命令的区别是什么。这篇文章就着重说说几个常见的Git命令。  git push git pull git commit git clone git remote git fetch git add下面详细介绍上面各个命令的概念和用法，理解了这些内容，也基本掌握">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-30T01:28:04.461Z">
+<meta property="og:updated_time" content="2017-10-30T13:25:17.614Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
+<meta name="twitter:title" content="Git命令">
+<meta name="twitter:description" content="前几天图森科技的面试官问会不会使用Git和SVN，对Git的理解怎么样，着重问了git push, git commit和git add三个命令的区别是什么。这篇文章就着重说说几个常见的Git命令。  git push git pull git commit git clone git remote git fetch git add下面详细介绍上面各个命令的概念和用法，理解了这些内容，也基本掌握">
 
 
 
@@ -161,13 +165,13 @@
 
 
 
-  <link rel="canonical" href="http://zhouyingming.com/about/"/>
+  <link rel="canonical" href="http://zhouyingming.com/2017/10/30/Git命令/"/>
 
 
 
 
 
-  <title>about | Victor Chou's Home</title>
+  <title>Git命令 | Victor Chou's Home</title>
   
 
 
@@ -335,33 +339,268 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zhouyingming.com/2017/10/30/Git命令/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Victor Chou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/ymz.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Victor Chou's Home">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">about</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body han-init-context">
         
         
+          <h1 class="post-title" itemprop="name headline">Git命令</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-30T20:21:52+08:00">
+                2017-10-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-      </div>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/computer-science/" itemprop="url" rel="index">
+                    <span itemprop="name">Computer Science</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/10/30/Git命令/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2017/10/30/Git命令/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+          
+
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body han-init-context" itemprop="articleBody">
+
       
       
+
+      
+        <p>前几天图森科技的面试官问会不会使用<a href="https://zh.wikipedia.org/wiki/Git" target="_blank" rel="external">Git</a>和<a href="https://zh.wikipedia.org/wiki/Subversion" target="_blank" rel="external">SVN</a>，对Git的理解怎么样，着重问了git push, git commit和git add三个命令的区别是什么。这篇文章就着重说说几个常见的Git命令。</p>
+<ul>
+<li>git push</li>
+<li>git pull</li>
+<li>git commit</li>
+<li>git clone</li>
+<li>git remote</li>
+<li>git fetch</li>
+<li>git add<br>下面详细介绍上面各个命令的概念和用法，理解了这些内容，也基本掌握了Git远程操作。<br>一、 git push</li>
+</ul>
+<hr>
+<p>二、 git clone</p>
+<hr>
+<p>远程操作的第一步是从远程主机上克隆一个版本库，这是要用到git clone命令。</p>
+<blockquote>
+<p>$ git clone &lt;版本库地址&gt;</p>
+</blockquote>
+<p>比如克隆Hexo框架下Next主题的版本库。</p>
+<blockquote>
+<p>$ git clone <a href="https://github.com/iissnan/hexo-theme-next.git" target="_blank" rel="external">https://github.com/iissnan/hexo-theme-next.git</a></p>
+</blockquote>
+<p>该命令将在本地主机生成一个目录，与远程主机的版本库同名。如果要指定不同的目录名，可以将你想要设置的目录名作为<br>git clone命令的第二个参数。</p>
+<blockquote>
+<p>$ git clone &lt;版本库的网址&gt;&lt;本地目录名&gt;</p>
+</blockquote>
+<p>git clone支持多种协议，除了HTTP(S)协议以外，还支持SSH, Git, 本地文件协议，下面是一些例子。</p>
+<blockquote>
+<p>$ git clone http[s]://example.com/path/to/repo.git/<br>    $ git clone ssh://example.com/path/to/repo.git/<br>    $ git clone git://example.com/path/to/repo.git/<br>    $ git clone /opt/git/project.git<br>    $ git clone file:///opt/git/project.git<br>    $ git clone ftp[s]://example.com/path/to/repo.git/<br>    $ git clone rsync://example.com/path/to/repo.git/</p>
+</blockquote>
+<p>SSH协议还有另外一种写法。</p>
+<blockquote>
+<p>$ git clone [user@]example.com: path/to/repo.git/</p>
+</blockquote>
+<p>通常来说，Git协议下载速度最快，SSH协议用于需要用户认证的场合<br>二、 git remote</p>
+<hr>
+<p>为了便于管理，Git要求每个远程主机都必须指定一个主机名（hostname）。git remote命令用于管理主机名。不带参数的时候，<br>git remote命令列出所有远程主机名。例如：</p>
+<blockquote>
+<p>git remote<br>    origin</p>
+</blockquote>
+<p>使用-v选项，可以看见远程主机的网址</p>
+<blockquote>
+<p>git remote -v<br>origin  git@github.com:jquery/jquery.git (fetch)<br>origin  git@github.com:jquery/jquery.git (push)</p>
+</blockquote>
+
       
     </div>
     
     
     
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="Victor Chou 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Victor Chou 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Victor Chou
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://zhouyingming.com/2017/10/30/Git命令/" title="Git命令">http://zhouyingming.com/2017/10/30/Git命令/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Git/" rel="tag"># Git</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/10/27/排序算法/" rel="next" title="排序算法">
+                <i class="fa fa-chevron-left"></i> 排序算法
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -642,6 +881,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
 
   
 
@@ -662,9 +905,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://zhouyingming.com/about/index.html';
-          this.page.identifier = 'about/index.html';
-          this.page.title = 'about';
+          this.page.url = 'http://zhouyingming.com/2017/10/30/Git命令/';
+          this.page.identifier = '2017/10/30/Git命令/';
+          this.page.title = 'Git命令';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://.disqus.com/embed.js';

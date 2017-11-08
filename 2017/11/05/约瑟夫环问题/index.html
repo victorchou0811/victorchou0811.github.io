@@ -108,7 +108,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Algorithm," />
 
 
 
@@ -124,13 +124,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Victor Chou&#39;s Home">
-<meta property="og:url" content="http://zhouyingming.com/archives/2017/index.html">
+<meta name="description" content="约瑟夫环问题描述: 设有编号为$1，2，\ldots，n$的n(n&amp;gt;0)个人围成一个圈，从第1个人开始报数，报到m时停止报数，报m的人出圈，再从他的下一个人起重新报数，报到m时停止报数，报m的出圈，$\ldots$，如此下去，直到所有人全部出圈为止。当任意给定n和m后，设计算法求n个人出圈的次序。  稍微简化一下。问题描述：n个人（编号0~(n-1))，从0开始报数，报到(m-1)的退出，">
+<meta name="keywords" content="Algorithm">
+<meta property="og:type" content="article">
+<meta property="og:title" content="约瑟夫环问题">
+<meta property="og:url" content="http://zhouyingming.com/2017/11/05/约瑟夫环问题/index.html">
 <meta property="og:site_name" content="Victor Chou&#39;s Home">
+<meta property="og:description" content="约瑟夫环问题描述: 设有编号为$1，2，\ldots，n$的n(n&amp;gt;0)个人围成一个圈，从第1个人开始报数，报到m时停止报数，报m的人出圈，再从他的下一个人起重新报数，报到m时停止报数，报m的出圈，$\ldots$，如此下去，直到所有人全部出圈为止。当任意给定n和m后，设计算法求n个人出圈的次序。  稍微简化一下。问题描述：n个人（编号0~(n-1))，从0开始报数，报到(m-1)的退出，">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-11-05T05:51:31.017Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Victor Chou&#39;s Home">
+<meta name="twitter:title" content="约瑟夫环问题">
+<meta name="twitter:description" content="约瑟夫环问题描述: 设有编号为$1，2，\ldots，n$的n(n&amp;gt;0)个人围成一个圈，从第1个人开始报数，报到m时停止报数，报m的人出圈，再从他的下一个人起重新报数，报到m时停止报数，报m的出圈，$\ldots$，如此下去，直到所有人全部出圈为止。当任意给定n和m后，设计算法求n个人出圈的次序。  稍微简化一下。问题描述：n个人（编号0~(n-1))，从0开始报数，报到(m-1)的退出，">
 
 
 
@@ -160,13 +165,13 @@
 
 
 
-  <link rel="canonical" href="http://zhouyingming.com/archives/2017/"/>
+  <link rel="canonical" href="http://zhouyingming.com/2017/11/05/约瑟夫环问题/"/>
 
 
 
 
 
-  <title>归档 | Victor Chou's Home</title>
+  <title>约瑟夫环问题 | Victor Chou's Home</title>
   
 
 
@@ -194,7 +199,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -332,222 +337,234 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zhouyingming.com/2017/11/05/约瑟夫环问题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Victor Chou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/ymz.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Victor Chou's Home">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">约瑟夫环问题</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-05T13:38:20+08:00">
+                2017-11-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 5 篇日志。 继续努力。
-      </span>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/algorithm/" itemprop="url" rel="index">
+                    <span itemprop="name">Algorithm and Data Structure</span>
+                  </a>
+                </span>
 
-      
-
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2017">2017</h1>
-          </div>
-        
-        
 
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/11/08/合并两个排序链表/" itemprop="url">
-              
-                <span itemprop="name">合并两个排序链表</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-11-08T20:02:47+08:00"
-              content="2017-11-08" >
-          11-08
-        </time>
-      </div>
-
-    </header>
-  </article>
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/11/05/约瑟夫环问题/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2017/11/05/约瑟夫环问题/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+          
 
 
+          
+          
 
-      
+          
 
-        
-        
-        
+          
 
-        
-        
+          
 
-        
+        </div>
+      </header>
+    
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/11/05/约瑟夫环问题/" itemprop="url">
-              
-                <span itemprop="name">约瑟夫环问题</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-11-05T13:38:20+08:00"
-              content="2017-11-05" >
-          11-05
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+    
+    
+    
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/11/01/面试题总结/" itemprop="url">
-              
-                <span itemprop="name">面试题总结</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-11-01T16:33:11+08:00"
-              content="2017-11-01" >
-          11-01
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/10/30/Git命令/" itemprop="url">
-              
-                <span itemprop="name">Git命令</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-10-30T20:21:52+08:00"
-              content="2017-10-30" >
-          10-30
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <p> 约瑟夫环问题描述: 设有编号为$1，2，\ldots，n$的n(n&gt;0)个人围成一个圈，从第1个人开始报数，报到m时停止报数，报m的人出圈，再从他的下一个人起重新报数，报到m时停止报数，报m的出圈，$\ldots$，如此下去，直到所有人全部出圈为止。当任意给定n和m后，设计算法求n个人出圈的次序。  稍微简化一下。<br>问题描述：n个人（编号0~(n-1))，从0开始报数，报到(m-1)的退出，剩下的人继续从0开始报数。求胜利者的编号</p>
+<p>思路：环链表来做，构建一个环链表，每个结点的编号为0, 1, $\ldots$ n-1。每次从当前位置向前移动m-1步，然后删除这个结点。最后剩下的结点就是胜利者。<br>两种实现办法：一种是自定义链表操作，另一种用是STL库的单链表。不难发现，用STL库可以提高编写速度。</p>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/10/27/排序算法/" itemprop="url">
-              
-                <span itemprop="name">排序算法</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-10-27T13:17:00+08:00"
-              content="2017-10-27" >
-          10-27
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="Victor Chou 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Victor Chou 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Victor Chou
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://zhouyingming.com/2017/11/05/约瑟夫环问题/" title="约瑟夫环问题">http://zhouyingming.com/2017/11/05/约瑟夫环问题/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Algorithm/" rel="tag"># Algorithm</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/11/01/面试题总结/" rel="next" title="面试题总结">
+                <i class="fa fa-chevron-left"></i> 面试题总结
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/11/08/合并两个排序链表/" rel="prev" title="合并两个排序链表">
+                合并两个排序链表 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -555,6 +572,17 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -816,6 +844,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
 
   
 
@@ -833,6 +865,18 @@
       <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
     
 
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://zhouyingming.com/2017/11/05/约瑟夫环问题/';
+          this.page.identifier = '2017/11/05/约瑟夫环问题/';
+          this.page.title = '约瑟夫环问题';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
     
 
   

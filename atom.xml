@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhouyingming.com/"/>
-  <updated>2017-10-30T13:25:17.614Z</updated>
+  <updated>2017-11-08T12:07:17.821Z</updated>
   <id>http://zhouyingming.com/</id>
   
   <author>
@@ -15,6 +15,75 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>合并两个排序链表</title>
+    <link href="http://zhouyingming.com/2017/11/08/%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8/"/>
+    <id>http://zhouyingming.com/2017/11/08/合并两个排序链表/</id>
+    <published>2017-11-08T12:02:47.000Z</published>
+    <updated>2017-11-08T12:07:17.821Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;输入两个单调递增的链表，输出两个链表合成后的链表，当然我们需要合成后的链表满足单调不减规则。&lt;/p
+      
+    
+    </summary>
+    
+      <category term="Algorithm and Data Structure" scheme="http://zhouyingming.com/categories/algorithm/"/>
+    
+    
+      <category term="剑指offer" scheme="http://zhouyingming.com/tags/%E5%89%91%E6%8C%87offer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>约瑟夫环问题</title>
+    <link href="http://zhouyingming.com/2017/11/05/%E7%BA%A6%E7%91%9F%E5%A4%AB%E7%8E%AF%E9%97%AE%E9%A2%98/"/>
+    <id>http://zhouyingming.com/2017/11/05/约瑟夫环问题/</id>
+    <published>2017-11-05T05:38:20.000Z</published>
+    <updated>2017-11-05T05:51:31.017Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt; 约瑟夫环问题描述: 设有编号为$1，2，\ldots，n$的n(n&amp;gt;0)个人围成一个圈，从第1个人开始报数，报到m时停止报数，报m的人出圈，再从他的下一个人起重新报数，报到m时停止报数，报m的出圈，$\ldots$，如此下去，直到所有人全部出圈为止。当任意给定n和m
+      
+    
+    </summary>
+    
+      <category term="Algorithm and Data Structure" scheme="http://zhouyingming.com/categories/algorithm/"/>
+    
+    
+      <category term="Algorithm" scheme="http://zhouyingming.com/tags/Algorithm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>面试题总结</title>
+    <link href="http://zhouyingming.com/2017/11/01/%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93/"/>
+    <id>http://zhouyingming.com/2017/11/01/面试题总结/</id>
+    <published>2017-11-01T08:33:11.000Z</published>
+    <updated>2017-11-07T08:05:51.601Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;智力题趣味题（逻辑题）&quot;&gt;&lt;a href=&quot;#智力题趣味题（逻辑题）&quot; class=&quot;headerlink&quot; title=&quot;智力题趣味题（逻辑题）&quot;&gt;&lt;/a&gt;智力题趣味题（逻辑题）&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;三堆数量随机的石头，两个人轮流从其中一堆中拿走任意数量的
+      
+    
+    </summary>
+    
+    
+      <category term="Interview Question" scheme="http://zhouyingming.com/tags/Interview-Question/"/>
+    
+  </entry>
   
   <entry>
     <title>Git命令</title>

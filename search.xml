@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[合并两个排序链表]]></title>
+    <url>%2F2017%2F11%2F08%2F%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%2F</url>
+    <content type="text"><![CDATA[题目描述 输入两个单调递增的链表，输出两个链表合成后的链表，当然我们需要合成后的链表满足单调不减规则。 输入描述两个单调递增的链表 输出描述一个单调不减的链表]]></content>
+      <categories>
+        <category>Algorithm and Data Structure</category>
+      </categories>
+      <tags>
+        <tag>剑指offer</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[约瑟夫环问题]]></title>
+    <url>%2F2017%2F11%2F05%2F%E7%BA%A6%E7%91%9F%E5%A4%AB%E7%8E%AF%E9%97%AE%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[约瑟夫环问题描述: 设有编号为$1，2，\ldots，n$的n(n&gt;0)个人围成一个圈，从第1个人开始报数，报到m时停止报数，报m的人出圈，再从他的下一个人起重新报数，报到m时停止报数，报m的出圈，$\ldots$，如此下去，直到所有人全部出圈为止。当任意给定n和m后，设计算法求n个人出圈的次序。 稍微简化一下。问题描述：n个人（编号0~(n-1))，从0开始报数，报到(m-1)的退出，剩下的人继续从0开始报数。求胜利者的编号 思路：环链表来做，构建一个环链表，每个结点的编号为0, 1, $\ldots$ n-1。每次从当前位置向前移动m-1步，然后删除这个结点。最后剩下的结点就是胜利者。两种实现办法：一种是自定义链表操作，另一种用是STL库的单链表。不难发现，用STL库可以提高编写速度。]]></content>
+      <categories>
+        <category>Algorithm and Data Structure</category>
+      </categories>
+      <tags>
+        <tag>Algorithm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[面试题总结]]></title>
+    <url>%2F2017%2F11%2F01%2F%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93%2F</url>
+    <content type="text"><![CDATA[智力题趣味题（逻辑题） 三堆数量随机的石头，两个人轮流从其中一堆中拿走任意数量的石头，拿走最后一块的人输，必胜法是什么 有2个骰子,每一个骰子有是6面的正方体,每一面上只能放0到9的数字一个,问这2个骰子如何组合，可以达到显示日历的效果（从01-31）？ 25匹马，5个跑道，如何在最少的比赛次数内找出最快的三匹？ 有 1024 个人，两两比赛，决出冠军。其中 1024 个人当中有一对兄弟，问这对兄弟相遇的概率有多大？ 如下图所示，问图中总共有多少个三角形。 设 n 为 BC 边上的点 将所有的 n 与点 A 连接，求 n=N 时图中的三角形的个数。（图中 n=2 ） M枚硬币，两人轮流取1至N枚间的任意枚，谁拿到最后一枚谁获胜。那么谁先拿能够保证自己赢？（有通解） 有 500 桶酒，其中一桶有毒，而一旦吃了，毒性会在一周内发作，现在我们用小老鼠做实验，要在 1 周后找出那桶毒酒，最少需要多少老鼠。（）（老鼠的使用量越少越好，注意，毒性 1 周后才会发作，而且一周后必须出结果，所以时间紧迫） 青蛙跳台阶问题： 一只青蛙可以一次跳一级台阶，也可以一次跳两级台阶，如果青蛙要跳上n级台阶，共有多少钟跳法？ 电线线头问题：你在一幢100层大楼下，有21根电线线头标有数字1..21。这些电线一直延伸到大楼楼顶，楼顶的线头处标有字母A..U。你不知道下面的数字和上面的字母的对应关系。你有一个电池，一个灯泡，和许多很短的电线。如何只上下楼一次就能确定电线线头的对应关系？Answer: 在下面把2,3连在一起，把4到6全连在一起，把7到10全连在一起，等等，这样你就把电线分成了6个“等价类”，大小分别为1, 2, 3, 4, 5, 6。然后到楼顶，测出哪根线和其它所有电线都不相连，哪些线和另外一根相连，哪些线和另外两根相连，等等，从而确定出字母A..U各属于哪个等价类。现在，把每个等价类中的第一个字母连在一起，形成一个大小为6的新等价类；再把后5个等价类中的第二个字母连在一起，形成一个大小为5的新等价类；以此类推。回到楼下，把新的等价类区别出来。这样，你就知道了每个数字对应了哪一个原等价类的第几个字母，从而解决问题。 用2个玻璃球找到从一100层的大楼的某一层落下刚好会摔碎，如何制定最优策略？有一栋100层高的大楼，给你两个完全相同的玻璃球，假设从某一层开始丢下玻璃球会摔碎，怎么利用手中的两个玻璃球，用什么最优策略（最少次数）知道这个临界的层是第几层（http://blog.csdn.net/jiaomeng/article/details/1435226） 糖水问题：有5杯水，其中有一杯是糖水，再给你一个空杯子，设计一种方案最多只尝三次，找出这杯糖水。（类似于二分法） 蚂蚁相撞问题：在一个等边三角形的三个顶点上各有一只蚂蚁，它们向另一个顶点运动，目标随机（可能为另外两个顶点的任意一个）。问三只蚂蚁不相撞的概率是多少？（概率分析或者利用二进制思维） 握手问题：一对夫妇邀请N-1对夫妇参加聚会（因此聚会上总共有2N人）。每个人都和所有自己不认识的人握了一次手。然后，男主人问其余所有人（共2N-1个人）各自都握了几次手，得到的答案全部都不一样。假设每个人都认识自己的配偶，那么女主人握了几次手？ 飞行器处理问题：一个飞船上，飞船上的计算机有n个处理器。突然，飞船遭遇意外，一些处理器被损坏了。此时知道有超过一半的处理器仍然是好的，同时可以向一个处理器询问另的处理器总是说真话，一个处理器是好的还是坏的，好坏的处理器总是说假话，用n-2次询问找出一个好的处理器。首先给处理器从1到n进行编号。用符号a-&gt;b表示向标号为a的处理器询问处理器b是不是好的。 然后执行1-&gt;2，如果1说不是，就把他们俩都去掉，因为如果1是好的，则2是坏的，如果1是坏的，则2是好的，所以能够保证两个处理器一个是好的，一个是坏的，去掉它们两，则剩下的处理器中好的仍然过半），然后从3-&gt;4开始继续发问。如果1说2是好的，就继续问2-&gt;3，3-&gt;4，……直到某一次j说j+1是坏的，把j和j+1去掉，然后问j-1 -&gt; j+2；或者从j+2 -&gt; j+3开始发问，如果前面已经没有j-1了（之前已经被去掉过了）。注意到整个推理过程，始终维护着一个类似于“链”的结构，即前面的每一个处理器都说后面那个是好的。这条链里的所有处理器要么都是好的，要么都是坏的。当这条链越来越长，剩下的处理器越来越少时，总有一个时候这条链超过了剩下的处理器的一半，此时可以肯定这条链里的所有处理器都是好的。或者，越来越多的处理器都被去掉了，链的长度依旧为0，而最后只剩下一个或两个处理器没被问过，那它们一定就是好的了。另外注意到，第一个处理器的好坏从来没被问过，因为最后一个处理器的好坏不可能被问到，因为一旦链长超过剩余处理器的一半，或者最后没被去掉的就只剩这一个了时，就不需要问了，因此询问次数不会超过n-2。 机器人相遇问题：有两个机器人，初始时位于数轴上的不同位置，如何给这两个机器人输入一段相同的程序，使得这两个机器人保证可以相遇。注意，程序只能包含”左移n个单位”、”右移n个单位”，条件判断语句if，循环语句while，以及两个返回Boolean值的函数”在自己的起点处”和”在对方的起点处”，不能使用其它的变量和计数器。 25枚硬币，两人轮流拿到1到3枚，手中最后总数是奇数（如自己15别人10你胜利）为赢家。怎样拿才会胜。 不用计算器，2的100次方是几位数; 估算9的10万次方是几位数。 数据结构题 一个链表，如果找出最中间的结点？ 算法题 一个整数数组，有正数和负数，求和最大的子串？ Design and implement a data structure for Least Recently Used (LRU) cache. It should support the following operations: get and set. get(key) - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1. set(key, value) - Set or insert the value if the key is not already present. When the cache reached its capacity, it should invalidate the least recently used item before inserting a new item. 100个整数组成的数组，打乱次序，拿掉其中一个数，把它找出来（运用另外一个数学技巧可以几行代码搞定） Linux Linux如何找出10天内修改过的文件]]></content>
+      <tags>
+        <tag>Interview Question</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Git命令]]></title>
     <url>%2F2017%2F10%2F30%2FGit%E5%91%BD%E4%BB%A4%2F</url>
     <content type="text"><![CDATA[前几天图森科技的面试官问会不会使用Git和SVN，对Git的理解怎么样，着重问了git push, git commit和git add三个命令的区别是什么。这篇文章就着重说说几个常见的Git命令。 git push git pull git commit git clone git remote git fetch git add下面详细介绍上面各个命令的概念和用法，理解了这些内容，也基本掌握了Git远程操作。一、 git push 二、 git clone 远程操作的第一步是从远程主机上克隆一个版本库，这是要用到git clone命令。 $ git clone &lt;版本库地址&gt; 比如克隆Hexo框架下Next主题的版本库。 $ git clone https://github.com/iissnan/hexo-theme-next.git 该命令将在本地主机生成一个目录，与远程主机的版本库同名。如果要指定不同的目录名，可以将你想要设置的目录名作为git clone命令的第二个参数。 $ git clone &lt;版本库的网址&gt;&lt;本地目录名&gt; git clone支持多种协议，除了HTTP(S)协议以外，还支持SSH, Git, 本地文件协议，下面是一些例子。 $ git clone http[s]://example.com/path/to/repo.git/ $ git clone ssh://example.com/path/to/repo.git/ $ git clone git://example.com/path/to/repo.git/ $ git clone /opt/git/project.git $ git clone file:///opt/git/project.git $ git clone ftp[s]://example.com/path/to/repo.git/ $ git clone rsync://example.com/path/to/repo.git/ SSH协议还有另外一种写法。 $ git clone [user@]example.com: path/to/repo.git/ 通常来说，Git协议下载速度最快，SSH协议用于需要用户认证的场合二、 git remote 为了便于管理，Git要求每个远程主机都必须指定一个主机名（hostname）。git remote命令用于管理主机名。不带参数的时候，git remote命令列出所有远程主机名。例如： git remote origin 使用-v选项，可以看见远程主机的网址 git remote -vorigin git@github.com:jquery/jquery.git (fetch)origin git@github.com:jquery/jquery.git (push)]]></content>
